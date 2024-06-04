@@ -5,16 +5,14 @@ import { Home } from '../screens/HomeScreen';
 import { Contacts } from '../screens/ContactsScreen';
 import { Product } from '../screens/Product';
 
-const Stack = createNativeStackNavigator();
+const WellcomeNav = createNativeStackNavigator();
 export default function HomeScreen() {
   return (
-    <Stack.Navigator>
-    <Stack.Screen name='HomeNav' component={Home} />
-    <Stack.Screen name='ContactsNav' component={Contacts} />
-    <Stack.Screen name='ProductNav' component={Product}/>
-
-
-  </Stack.Navigator>
+    <WellcomeNav.Navigator>
+    <WellcomeNav.Screen  name='HomeNav' component={Home} />
+    <WellcomeNav.Screen name='ContactsNav' component={Contacts} />
+    <WellcomeNav.Screen name='ProductNav' component={Product}/>
+  </WellcomeNav.Navigator>
   );
 }
 
