@@ -10,7 +10,7 @@ export default function HomeScreen() {
   return (
     <WellcomeNav.Navigator>
     <WellcomeNav.Screen  name='HomeNav' component={Home} />
-    <WellcomeNav.Screen name='ContactsNav' component={Contacts} />
+    <WellcomeNav.Screen name='PhoneNumberNav' component={Contacts} />
     <WellcomeNav.Screen name='ProductNav' component={Product}/>
   </WellcomeNav.Navigator>
   );
